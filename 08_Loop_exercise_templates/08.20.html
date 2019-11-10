@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Loan Calculator - Even Principal Payments</title>
+    <link rel="stylesheet" type="text/css" href="08.20.css" />
+</head>
+<body>
+    <h1>Loan Calculator</h1>
+    <h2>Even Principal Payments</h2>
+
+    <form>
+        <p>
+            <label>Amount of the loan (euro): </label>
+            <input type="text" id="txtLoanAmount" size="8" />
+        </p>
+        <p>
+            <label>Annual interest: </label>
+            <input type="text" id="txtInterest" size="8" />
+        </p>
+        <p>
+            <label>Repayment period (years): </label>
+            <input type="text" id="txtYears" size="8" />
+        </p>
+        <p>
+            <label>Payments per year (1-12): </label>
+            <input type="text" id="txtYearlyPayments" size="8" />
+        </p>
+        <p>
+            <label>Total payment: </label>
+            <input type="text" id="txtTotalPayment" size="8" disabled />
+        </p>
+        <p>
+            <label>Total interest: </label>
+            <input type="text" id="txtTotalInterest" size="8" disabled />
+        </p>
+
+        <p>
+            <input type="button" value="Calculate" onClick="calculate()" />
+        </p>
+    </form>
+
+    <p id="pOutput"></p>
+
+    <script src="08.20.js"></script>
+</body>
+</html>

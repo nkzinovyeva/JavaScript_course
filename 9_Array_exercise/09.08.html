@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Lottery</title>
+</head>
+<body>
+	<h1>Lottery</h1>
+
+	<form>
+		<p>
+			<label>Name: </label> 
+            <input type="text" id="txtName" size="15"> 
+            <input type="button" value="Add" onClick="addName()"> 
+            <input type="button" value="Make the draw" onClick="makeDraw()">
+		</p>
+	</form>
+    
+	<div id="divNameList"></div>
+
+	<div id="divOutput"></div>
+    
+    <script src="09.08.js"></script>
+</body>
+</html>
+
+<!-- test example:
+name = Maija , action = Add -> Inserted names: Maija   (+ no 'Winner is X'-text)
+... name = Leena, action= Add ,  -> Inserted names: Maija , Leena   (+ no 'Winner is X'-text)
+... name = Minna, action= Add , action = Make the draw > Inserted names: Maija , Leena, Matti, Pekka, Jukka,Paavo, Minna    Winner is Leena (Randomized).				
+-->

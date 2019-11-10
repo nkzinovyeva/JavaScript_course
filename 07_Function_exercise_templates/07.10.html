@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Repair Work</title>
+    <link rel="stylesheet" type="text/css" href="07.10.css">
+</head>
+<body>
+    <h1>Repair Work</h1>
+
+    <form>
+        <p>
+            <label>Work Title: </label>
+            <input type="text" id="txtTitle" name="txtTitle" size="25" onblur="modifyTitle()">
+            <!-- NB! The onfocusout attribute: Chrome supports it, but Firefox does not support it -->
+        </p>
+        <p>
+            <label>Date: </label>
+            <input type="text" id="txtDate" name="txtDate" size="8" />
+        </p>
+        <p>
+            <label>Start Time: </label>
+            <input type="text" id="txtStartTime" name="txtStartTime" size="5" />
+        </p>
+        <p>
+            <label>End Time: </label>
+            <input type="text" id="txtEndTime" name="txtEndTime" size="5" />
+        </p>
+        <p>
+            <label>Description: </label>
+            <textarea id="txtDescription" name="txtDescription" rows="4" cols="40"></textarea>
+        </p>
+        <p>
+            <input type="button" value="Calculate" onclick="calculate()" />
+        </p>
+    </form>
+
+
+    <div id="divOutput"></div>
+
+    <script src="07.10.js"></script>
+    <script src="07.10_functions.js"></script>
+
+</body>
+</html>
+
+
+<!-- test example:
+title = installation, date = 04.04.2015, start time = 12:08, end time =13:55  -> Length of the work was 107 minutes. 
+	The hourly price is 48.00 euros during the workdays. 
+	The price of this repair work is 85.60 euros.
+
+title = installation, date = 05.04.2015, start time = 12:08, end time =13:55  -> Length of the work was 107 minutes. 
+	The hourly price is 72.00 euros during the Sundays. 
+	The price of this repair work is 128.40 euros.
+-->
