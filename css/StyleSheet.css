@@ -1,0 +1,52 @@
+header {
+    background: rgb(231, 244, 248);
+    color: rgb(155, 152, 152);
+    font-size: 24px;
+    font-weight: bold;
+}
+body {
+    background: white;
+    color: rgb(13, 7, 68);
+    padding: 2em;       /* Padding is 2 times the current zoom level font size */
+}
+h3 {
+    font-size: 1.25rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h5 {
+    color: darkred;
+    margin-top: 40px;
+}
+ul {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ol {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+details {
+    border: 0px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+footer {
+    background: rgb(231, 244, 248);
+    margin-top: 64px;  /* Keeps footer a bit separated from main content */    
+}
+
+
