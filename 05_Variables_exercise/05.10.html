@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Car Share</title>
+  <link rel="stylesheet" type="text/css" href="05.10.css" />
+</head>
+
+<body>
+  <h1>Car Share</h1>
+
+  <form>
+    <p><label>Kilometers: </label> <input type="text" name="kilometers" id="kilometers" size="6"></p>
+    <p><label>Fuel consumption (litre/km): </label> <input type="text" name="consumption" id="consumption" size="6"></p>
+    <p><label>Fuel price (euro/litre): </label></p>
+    <p><input type="text" name="price" id="price" size="6"></p>
+    <p><label>Participants: </label> <input type="text" name="participants" id="participants" size="6"></p>
+
+    <p><input type="button" value="Calculate costs" onClick="calculateCosts()"></p>
+  </form>
+
+  <!-- This is the target where the JavaScript code will write the answer -->
+  <div id="divAnswer"></div>
+
+  <script src="05.10.js"></script>
+</body>
+
+</html>

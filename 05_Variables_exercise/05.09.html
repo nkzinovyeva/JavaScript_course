@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8" />
+  <title>Cottage rent per participant</title>
+  <link rel="stylesheet" type="text/css" href="05.09.css" />
+</head>
+
+<body>
+  <h1>Cottage rent per participant</h1>
+
+  <form>
+    <p><label>Rent: </label> <input type="text" name="rent" id="rent" size="5"></p>
+    <p><label>Participants </label> <input type="text" name="participants" id="participants" size="3"></p>
+
+    <p><input type="button" value="Calculate rent" onClick="calculateRent()"></p>
+  </form>
+
+  <!-- This is the target where the JavaScript code will write the answer -->
+  <div id="divAnswer"></div>
+
+  <script src="05.09.js"></script>
+</body>
+
+</html>

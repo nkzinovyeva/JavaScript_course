@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Package Comparison</title>
+</head>
+
+<body>
+	<h1>Package Comparison</h1>
+
+	<form>
+		<p>
+			<label>Text messages: </label>
+			<input type="text" name="txtMessages" id="txtMessages" size="3" /> pcs
+		</p>
+		<p>
+			<label>Call time: </label>
+			<input type="text" name="txtCallTime" id="txtCallTime" size="3" /> min
+		</p>
+		<p>
+			<input type="button" value="Compare Packages" onClick="comparePackages();" />
+		</p>
+	</form>
+
+	<!-- This is the target where the JavaScript will write the answer -->
+	<div id="divAnswer"></div>
+
+	<script src="06.03.js"></script>
+</body>
+
+</html>
+
+<!-- test example: 
+textMessages = 20,  callTime = 30  -> costs = 23.35 euros (Special Package) 
+textMessages = 100, callTime = 150 -> costs = 37.15 euros (Special Package)  
+-->

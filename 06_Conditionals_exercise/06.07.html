@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Study Grant</title>
+	<link rel="stylesheet" type="text/css" href="06.07.css" />
+</head>
+
+<body>
+	<h1>Study Grant</h1>
+
+	<form>
+		<p>
+			<label>Age: </label>
+			<input type="text" id="txtAge" size="3" />
+		</p>
+		<p>
+			<label>With Parents (y/n): </label>
+			<input type="text" id="txtWithParents" size="1" />
+		</p>
+		<input type="button" value="Show Study Grant" onClick="showStudyGrant();" />
+	</form>
+
+	<!-- This is the target where the JavaScript will write the answer -->
+	<br>
+	<div id="divAnswer"></div>
+	
+	<script src="06.07.js"></script>
+</body>
+
+</html>

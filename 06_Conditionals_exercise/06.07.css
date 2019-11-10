@@ -1,0 +1,7 @@
+/* 06.07 Stylesheet */
+
+label {
+    display: block;
+    width: 8em;
+    float: left;
+}

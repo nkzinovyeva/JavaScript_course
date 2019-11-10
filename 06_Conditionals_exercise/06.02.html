@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Player's Age</title>
+</head>
+
+<body>
+	<h1>Player's Age</h1>
+	
+	<form>
+		<label>Age: </label>
+		<input type="text" name="txtAge" id="txtAge" size="3" />
+		<input type="button" value="Check age" onClick="checkAge();" />
+	</form>
+
+	<!-- This is the target where the JavaScript code will write the answer -->
+	<br>
+	<div id="divAnswer"></div>
+
+	<script src="06.02.js"></script>
+</body>
+
+</html>
+
+<!-- test example:
+age = 21 -> ok
+age = 16 -> not ok
+-->
