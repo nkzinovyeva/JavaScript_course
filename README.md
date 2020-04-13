@@ -1,2 +1,2 @@
-# study
+# JavaScript Course Exercises
 Study purpose
